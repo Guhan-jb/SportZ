@@ -1,0 +1,35 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional: Adjust the height based on your design */
+  }
+  
+  .profile-box {
+    border: 1px solid #ffffff;
+    padding: 20px;
+    width: 300px; /* Adjust the width based on your design */
+    text-align: center;
+    background-color: #ffffff6c;
+  }
+  
+  .profile-box label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .profile-box input,
+  .profile-box textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+.btn btn-primary{
+    color: rgb(18, 199, 36);
+  
+}  
+.btn btn-primary:hover
+{
+   background-color: rgb(192, 19, 117);
+}

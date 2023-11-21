@@ -1,0 +1,51 @@
+/* Sidebar.css */
+
+/* Overall layout styles */
+.app {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 150px; /* Adjust the width as needed */
+    background-color: #333; /* Background color for the sidebar */
+    color: #fff; /* Text color for the sidebar */
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+  
+  .sidebar p {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-image {
+    max-width: 100%;
+  }
+  
+  /* Open sidebar */
+  .app.open .sidebar {
+    transform: translateX(0);
+  }
+  
+  /* Toggle button styles */
+  .toggle-button {
+    background-color: #ea1616; /* Background color for the button */
+    color: #fff; /* Text color for the button */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  /* Adjust button position */
+  .app.open .toggle-button {
+    position: absolute;
+    left: 260px; /* Adjust the left position to match the sidebar width */
+  }
+  

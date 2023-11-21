@@ -1,0 +1,138 @@
+/* Home.css */
+
+body
+{
+  background-image: url("../Images/IMG_4403.JPG");
+  color: #131313;
+} 
+.img-overlay {
+  position: absolute;
+  background-color: rgba(35, 45, 57, 0.082);
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  height: 100vh;
+  width: 100%;
+}
+.products-card {
+    background-color: rgba(215, 224, 224, 0.815);
+    color:#131313;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .products-card img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .products-card .card-body {
+    text-align: center;
+  }
+  
+  .products-card .shopnow-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+  }
+  
+  .products-card .shopnow-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .shopnow-btn {
+    padding: 0.5em 1.5em; /* Adjust the padding to make the button smaller */
+  background: none;
+  border: 2px solid #fff;
+  font-size: 14px; /* Decrease the font size */
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 8px; /* Decrease the border-radius to make the corners less round */
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+   }
+   
+   .shopnow-btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ecd448;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+   }
+   
+   .shopnow-btn:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+   }
+   
+   .shopnow-btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+   .shopnow-btn:active {
+    transform: scale(0.9);
+   }
+   /* Home.css */
+
+
+.products-card:hover {
+  transform: scale(1.05); /* Increase the size on hover */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+/* HomePage.css */
+
+/* Styles for the video background */
+/* Container for the video background */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Place it behind other content */
+}
+
+/* Video element */
+#background-video {
+  min-width: 100vh; /* Ensure the video covers the entire container */
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Dark overlay */
+.video-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}

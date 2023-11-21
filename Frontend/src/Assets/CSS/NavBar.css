@@ -1,0 +1,68 @@
+
+  
+  .input {
+    min-height: 50px;
+    max-width: 150px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+  }
+  
+  .button--submit {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #5e4dcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color: #5e5dcd;
+  }
+  
+  .input:focus, .input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+  }
+  /* Navbar Dropdown Styles */
+.navbar-nav .nav-item .dropdown-menu {
+  background-color: #343a40; /* Background color for the dropdown */
+  border: none; /* Remove border */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: #ffffff; /* Text color for dropdown items */
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #212529; /* Background color on hover */
+}
+
+/* Navbar Dropdown Toggle Styles */
+.navbar-nav .nav-item .nav-link.dropdown-toggle {
+  color: #ffffff; /* Text color for the dropdown toggle */
+}
+
+/* Navbar Dropdown Indicator (Caret) Styles */
+.navbar-nav .nav-item .dropdown-toggle::after {
+  border-top: 0.3em solid #ffffff; /* Change caret color */
+}
+
+/* Navbar Dropdown Link Styles */
+.navbar-nav .nav-item .dropdown-menu .nav-link {
+  padding: 8px 20px; /* Adjust padding as needed */
+}
+
+/* Navbar Dropdown Link Hover Styles */
+.navbar-nav .nav-item .dropdown-menu .nav-link:hover {
+  background-color: transparent; /* Remove background color on hover */
+  color: #ffffff; /* Text color on hover */
+}
